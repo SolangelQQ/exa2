@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     androidTestImplementation(project(":domain"))
+    androidTestImplementation(project(":data"))
     ksp(libs.room.compiler)
 
     // Hilt
@@ -56,5 +57,8 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     implementation(libs.gson)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
 
 }
