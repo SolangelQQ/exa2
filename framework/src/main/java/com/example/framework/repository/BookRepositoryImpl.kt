@@ -2,8 +2,9 @@ package com.example.framework.repository
 
 import com.example.framework.service.BookApiService
 import com.example.book.domain.entity.Book
-import com.example.book.framework.persistence.BookDao
-import com.example.data.repository.BookRepository
+
+import com.example.domain.repository.BookRepository
+import com.example.framework.persistence.BookDao
 import javax.inject.Inject
 
 class BookRepositoryImpl @Inject constructor(

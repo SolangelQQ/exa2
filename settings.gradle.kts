@@ -20,8 +20,10 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Book"
-include(":app")
-include(":data")
-include(":domain")
-include(":usecases")
+//include(":app")
 include(":framework")
+include(":app", ":data", ":domain")
+project(":data").projectDir = file("data")
+project(":domain").projectDir = file("domain")
+include(":usecases")
+

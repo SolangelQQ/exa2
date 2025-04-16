@@ -1,7 +1,7 @@
 package com.example.domain.usecase
 
 import com.example.book.domain.entity.Book
-import com.example.data.repository.BookRepository
+import com.example.domain.repository.BookRepository
 
 class SearchBooksUseCase(
     private val bookRepository: BookRepository
